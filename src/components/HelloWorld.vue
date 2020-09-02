@@ -1,5 +1,6 @@
 <template>
   <div class="content">
+    <!--Nav Bar-->
     <nav>
       <img src="../assets/stp_logo.png" alt="" class="logo" />
       <ul>
@@ -8,10 +9,12 @@
         <li>Projects</li>
       </ul>
     </nav>
+    <!--User Inputs-->
     <div class="inputs">
       <input type="text" placeholder="ex: red or #ff0000" v-model="color" />
       <button @click="changeColor">Change</button>
     </div>
+    <!--Main Sections-->
     <section>
       <div class="container">
         <h2>Vission</h2>
@@ -56,8 +59,13 @@
     </section>
     <section>
       <h2>Teams</h2>
+      <!--Image Slider-->
       <div class="images">
-        <img class="mySlides" src="../assets/SoftwareDevelopment.jpg" style="display:block;"/>
+        <img
+          class="mySlides"
+          src="../assets/SoftwareDevelopment.jpg"
+          style="display:block;"
+        />
         <img class="mySlides" src="../assets/engineering.jpg" />
         <img class="mySlides" src="../assets/juniors.jpg" />
         <img class="mySlides" src="../assets/media.jpg" />
@@ -83,7 +91,23 @@
         </button>
       </div>
     </section>
-    <footer class="page__footer"></footer>
+    <!--Footer-->
+    <footer>
+      <div class="icons">
+        <a href="https://www.facebook.com/STP.Organization/">
+          <i class="fa fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com/STP_Egypt/">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/STP_Egypt/">
+          <i class="fa fa-instagram"></i>
+        </a>
+        <a href="https://www.youtube.com/user/STPchannel">
+          <i class="fa fa-youtube-play"></i>
+        </a>
+      </div>
+    </footer>
   </div>
 </template>
 
@@ -215,7 +239,7 @@ img {
 }
 
 .images button {
-  margin: 0 250px 20px 0px;
+  margin: 0 200px 20px 0px;
 }
 /*Footer
 ******************/
@@ -223,5 +247,15 @@ footer {
   background-color: brown;
   margin-bottom: 0;
   height: 50px;
+}
+
+.icons {
+  margin: 0 42vw;
+}
+
+i {
+  color: white;
+  font-size: 20px;
+  padding: 12px;
 }
 </style>
