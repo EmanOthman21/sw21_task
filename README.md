@@ -1,4 +1,12 @@
-# stp
+<img height="200" alt="Website page" src="assets/page1.png"></img>
+<img height="200" alt="symphonia logo" src="assets/page2.png"></img>
+
+# STP Task
+Enter a color's name or code to change all the text color with it.
+
+## Tools used
+- Vue js : **js framework**
+
 
 ## Project setup
 ```
@@ -17,7 +25,7 @@ npm run build
 
 ### Lints and fixes files
 ```
-npm run lint
+npm run lint --fix
 ```
 
 ### Customize configuration
